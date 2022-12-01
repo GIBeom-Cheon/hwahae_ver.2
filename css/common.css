@@ -1,0 +1,23 @@
+:root {
+  --main-color: #5ededf;
+  --gray-color: #ccc;
+  --black-color: #000000;
+}
+
+.block {
+  display: block !important;
+}
+.flex {
+  display: flex !important;
+}
+.none {
+  display: none !important;
+}
+
+ul,li{
+  padding: 0;
+}
+
+.blur{
+  filter: blur(6px);
+}

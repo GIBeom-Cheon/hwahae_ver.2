@@ -1,0 +1,432 @@
+.main {
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  max-width: 500px;
+  z-index: 3;
+}
+header .headerInner {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerInner .headerBtn {
+  background-color: transparent;
+  border: 0;
+}
+header .headerInner .headerHam {
+  background-color: transparent;
+  border: 0;
+}
+header .headerInner .headerClose {
+  background-color: transparent;
+  border: 0;
+  display: none;
+}
+
+.navbar {
+  background-color: #fff;
+  position: absolute;
+  z-index: 3;
+  transform: translateY(-120%);
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.5s;
+}
+.navbar ul {
+  list-style: none;
+  padding: 4%;
+  margin: 0;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 900;
+}
+
+.down {
+  -webkit-animation: down 0.5s;
+          animation: down 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes down {
+  from {
+    transform: translateY(-120%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes down {
+  from {
+    transform: translateY(-120%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.mainContainer {
+  height: 300vh;
+}
+
+.mainVisual {
+  height: 300vh;
+  transition: all 1s;
+}
+
+.workspace {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.mainImg {
+  height: 100vh;
+  transform: translateX(-370px);
+}
+
+.opacityBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.popUp {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  position: fixed;
+  padding: 5%;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 500px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.popUp .pupMain {
+  transition: all 1s;
+  text-align: center;
+  overflow: hidden;
+  font-size: 28px;
+  letter-spacing: -1px;
+}
+.popUp .pupMain p {
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+}
+.popUp p {
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+}
+.popUp .pupSub {
+  display: none;
+}
+.popUp .pupSub p {
+  font-size: 14px;
+  transform: translate3d(0, -20px, 0);
+}
+.popUp .pupSub .pup1 {
+  font-size: 28px;
+  letter-spacing: -1px;
+}
+
+.installBtn {
+  width: 6vw;
+  height: 2vh;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10vw;
+  z-index: 3;
+}
+
+/******************
+  S E C T I O N 1
+********************/
+.company-intro {
+  margin: 1vw auto;
+  max-width: 500px;
+  padding: 5%;
+}
+.company-intro strong {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+.company-intro p {
+  font-size: 12px;
+}
+
+/*****************
+  S E C T I O N 2
+***********************/
+.company-vision {
+  background: url(../img/sub1_sec1.jpg) no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 20vh;
+  max-width: 500px;
+  padding: 5%;
+  overflow: hidden;
+}
+.company-vision .vision-inner .vision-title {
+  font-size: 12px;
+}
+.company-vision .vision-inner .vision-desc {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/******************
+  S E C T I O N 3
+******************/
+.company-mission {
+  margin: 1vw auto;
+  max-width: 500px;
+  padding: 5%;
+  background-color: rgba(179, 238, 254, 0.222);
+}
+.company-mission .mission-inner {
+  margin-bottom: 5vh;
+}
+.company-mission .mission-inner .mission-title {
+  font-size: 12px;
+}
+.company-mission .mission-inner .mission-desc {
+  font-weight: 700;
+  font-size: 24px;
+}
+.company-mission .mission-box {
+  margin-top: 20px;
+}
+.company-mission .mission-box .mission-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 95%;
+  flex-wrap: wrap;
+  flex: 1 1 30px;
+  gap: 20px;
+}
+.company-mission .mission-box .mission-list .mission-item {
+  padding: 20px 0 40px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.company-mission .mission-box .mission-list .mission-item .mission-index {
+  font-size: 14px;
+  font-weight: 900;
+}
+.company-mission .mission-box .mission-list .mission-item .mission-topic {
+  font-size: 24px;
+  letter-spacing: -1px;
+  margin-top: 17px;
+  margin-bottom: 0;
+}
+.company-mission .mission-box .mission-list .mission-item .mission-desc {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+  letter-spacing: -1px;
+}
+.company-mission .mission-box .mission-pagenation {
+  text-align: center;
+}
+
+/***************
+  S E C T I O N 4
+****************/
+.company-culture {
+  margin: 10vw auto;
+  max-width: 500px;
+  padding: 5%;
+}
+.company-culture .company-inner {
+  margin-bottom: 5vh;
+}
+.company-culture .company-inner .culture-title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.company-culture .culture-contents .culture-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.company-culture .culture-contents .culture-list .list-item {
+  width: 95%;
+  padding: 5%;
+  height: 36vh;
+  margin-bottom: 6vh;
+}
+.company-culture .culture-contents .culture-list .list-item .culture-topic {
+  font-size: 18px;
+}
+.company-culture .culture-contents .culture-list .list-item .culture-desc {
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+.company-culture .culture-contents .culture-list .list-item .culture-viewmore .culture-viewmore-desc {
+  font-size: 12px;
+  opacity: 0;
+}
+.company-culture .culture-contents .culture-list .item1 {
+  background: url(../img/team_cu01.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.company-culture .culture-contents .culture-list .item2 {
+  background: url(../img/team_cu02.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.company-culture .culture-contents .culture-list .item3 {
+  background: url(../img/team_cu03.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.company-culture .culture-contents .culture-list .item4 {
+  background: url(../img/team_cu04.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.viewMoreBox {
+  display: none;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: black;
+}
+
+.viewMoreBox h1 {
+  text-align: center;
+}
+
+.viewMoreBox .closeBtn {
+  position: absolute;
+  top: 1.2%;
+  right: 1%;
+}
+
+/****************
+  F O O T E R
+******************/
+.footer {
+  background-color: rgba(179, 238, 254, 0.222);
+  width: 100%;
+}
+
+.footer_inner {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer_inner .footerLogo {
+  width: 120px;
+  height: 14px;
+  background: url(/img/birdview.png) no-repeat 0 0;
+  background-size: cover;
+}
+.footer_inner .footer-address {
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.footer_inner .footer-address address {
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+
+.footer-contents {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.footer-contents ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer-contents ul .footer-contents-item .footer-contents-txt1:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 20px;
+  background: #ccc;
+}
+.footer-contents ul .footer-contents-item .footer-contents-link1:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 20px;
+  background: #ccc;
+}
+
+.footer-privacy .privacy1 {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+.footer-privacy .privacy2 {
+  font-size: 14px;
+  letter-spacing: -1px;
+}
+.footer-privacy .privacy2:before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 7px 20px 0;
+  background-color: #ccc;
+}
+.footer-privacy p {
+  font-size: 14px;
+}
+
+.footer_sns ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+
+.blind {
+  display: none;
+}/*# sourceMappingURL=sub.css.map */

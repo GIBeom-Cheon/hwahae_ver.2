@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./img/logofavicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="대한민국 1등 뷰티앱 화해." />
+    <meta property="og:title" content="내가 찾는 모든 뷰티 | 화해" />
+    <meta property="og:description" content="대한민국 1등 뷰티앱 화해." />
+    <meta property="og:url" content="https://www.hwahae.co.kr/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://hwahae-homepage.s3.ap-northeast-2.amazonaws.com/public/images/common/og-default-thumb.png"
+    />
+    <meta property="og:image:alt" content="화해" />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      name="keywords"
+      content="화해, hwahae, 버드뷰, birdview, 화장품, 화장품 성분, 화장품 사이트, 화장품 성분 사이트"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내가 찾는 모든 뷰티 | 화해</title>
+    <link rel="manifest" href="manifest.json" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        //서비스워커가 있을때
+        navigator.serviceWorker
+          .register("service-worker.js") //등록
+          .then(function (success) {
+            console.log("serviceWorker 설치에 성공했습니다.", success);
+          })
+          .catch(function (error) {
+            console.log("serviceWorker 설치 실패", error);
+          });
+      }
+    </script>
+  </head>
+  <body class="no-scroll">
+    <div class="login">
+      <div class="loginContainer">
+        <img class="logo" src="./img/logo.png" />
+        <div class="load">
+          <p class="rv">화해 누적 리뷰 수</p>
+          <h2 class="number">7,271,013</h2>
+          <p class="copyRight">© Birdview</p>
+        </div>
+      </div>
+      <div class="popUp">
+        <div>내가 찾는<br />모든 뷰티</div>
+      </div>
+    </div>
+    <section class="sec1" name="member">
+      <div class="help">
+        <p>도움말</p>
+      </div>
+      <div class="info">
+        <img class="logo2" src="./img/logo.png" />
+        <p class="txt1">내가 찾는 모든 뷰티<br />대한민국 1등 뷰티 앱 화해</p>
+        <p class="txt2">
+          화해를 통해 나에게 꼭 맞는<br />뷰티 라이프를 찾는 즐거움을 누리세요
+        </p>
+      </div>
+      <div class="goid">
+        <a href="#"
+          ><img class="loginintro" src="./img/Group 2.png" alt="btn"
+        /></a>
+        <a href="#"
+          ><img class="loginintro" src="./img/appleid.png" alt="appleBtn"
+        /></a>
+        <a href="#"
+          ><img class="loginintro" src="./img/kakaoid.png" alt="kakaoBtn"
+        /></a>
+      </div>
+      <div class="idbtn">
+        <a href="#"><img class="btn" src="./img/naverbtn.png" /></a>
+        <a href="#"><img class="btn" src="./img/googlebtn.png" /></a>
+        <a href="#"><img class="btn" src="./img/fbbtn.png" /></a>
+      </div>
+      <div class="loginForm">
+        <a href="signUp.html"><div>이메일로 회원가입</div></a>
+        <div>|</div>
+        <a href="login.html"><div>이메일로 로그인</div></a>
+      </div>
+    </section>
+  </body>
+</html>
